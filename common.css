@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.units_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0 100px 0;
+}
+
+.units {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  gap: 100px;
+}
+
+.units_item {
+  margin: 0;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #bfbec3;
+  border-radius: 10px;
+  list-style: none;
+  transition: all 300ms;
+  opacity: 0.7;
+}
+
+.units_item:hover {
+  background-color: #b2a9d5;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.units_item a {
+  color: black;
+  text-decoration: none;
+}
+
+.back {
+  display: inline-block;
+  margin: 50px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.section {
+  max-width: 1300px;
+  margin: 60px auto 0 auto;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  list-style: none;
+}
+
+.item {
+  width: 400px;
+  height: 200px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #bfbec3;
+  border-radius: 20px;
+  transition: all 300ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrap:hover {
+  background-color: #b2a9d5;
+}
+
+.wrap_res {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+  background-color: #bfbec3;
+  font-size: 50px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.text_title {
+  font-size: 30px;
+}
+
+.text_desc {
+  font-size: 17px;
+}
+
+.wrap.active {
+  background-color: #c0e4ff;
+  transform: scale(1.1);
+}
+
+.wrap.inactive {
+  background-color: #94e285;
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.wrap.error {
+  background-color: #ffcccc;
+}
